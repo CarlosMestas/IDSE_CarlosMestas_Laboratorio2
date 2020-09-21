@@ -46,7 +46,7 @@ timing/name/.append style={yshift=1.5mm}
 {\LARGE \bf Introducción al Software de Entretenimiento} \\
 \vspace{1mm}
 Alumno: Mestas Escarcena, Carlos Alberto \\
-Grupo: B \\
+Grupo: A \\
 \hline \\
 \end{tabular} 
 
@@ -56,69 +56,69 @@ Grupo: B \\
 \end{center}  
 
 El desarrollo de este informe se puede encontrar en el repositorio de \textcolor{blue}{
-    \href{https://github.com/CarlosMestas/TC_A_9_Carlos_Mestas}{GitHub}}.
-
-\clearpage
-\newpage
-
-
-
-
-
-
-
-\section{IPSec}
-
-\setlength{\parindent}{1em} IPsec (Internet Protocol security) está compuesto por varios protocolos de seguridad, diseñado para garantizar que los datos enviados por una red IP sean invisibles e inaccesibles para terceros, permitiendo a dos o más equipo comunicarse de forma segura. Este cifrado se utiliza para garantizar la confidencialidad y para la autenticación.
-\\
-\\
-Funciona como otros protocolos de seguridad en la capa de aplicación de la comunicación de red. Una de sus ventajas es que IPsec, opera a nivel de red en lugar a nivel de aplicación, puede encriptar un paquete completo de IP, mediante dos mecanismos:
-
-\begin{itemize}
-    \item \textbf{Encabezado de autenticación (AH):} Mediante la colocación de una firma digital en cada paquete que se envía, protegiendo su red y sus datos a la interferencia de terceros, estos datos no pueden modificarse sin detección y permite también la verificación de identidad entre los dos extremos de la conexión.
-    \item \textbf{Carga de Seguridad Encapsulada (ESP):} Por un lado AH evita adulteración de un paquete, ESP garantiza que la información del paquete este encriptada y no pueda leerse.
-\end{itemize}
-
-Detalles técnicos:
-
-\begin{itemize}
-    \item Compatible con Windows 7+, Windows Server 2008, routers Cisco, macOS y dispositivos iOS.
-    \item Admite versiones compatibles para Linux y otros sistemas operativos.
-    \item El protocolo principal es el Intercambio de claves de Internet (IKE).
-    \item Utiliza la Asociación de seguridad de Internet y el Protocolo de Administración de Claves (ISAKMP) como se define en IETF RFC 2408 para implementar la negociación del servicio VPN.
-\end{itemize}
-
-Observando los detalles técnicos previos, cualquier computadora que cumpla con estos destalles, podrá ser configurable para IPSec.
-\\
-\\
-Ya que IPSec se ejecuta en la capa de red, los cambios solo se deben realizar en el sistema operativo, no en las aplicaciones individuales. IPSec también es invisible en funcionamiento y el uso de AH y ESP garantiza un gran alto nivel de seguridad y privacidad. Por otro lado es más complejo que otros protocolos de seguridad, por ellos es más complicado de configurar, IPSec requiere también una clave pública segura, ya que si roban la llave o esta mal administrada puede experimentar problemas y finalmente para la transmisión de paquetes de datos pequeños, puede ser una forma ineficiente de encriptar datos.
-
-\clearpage
-\newpage
-
-\section{Parámetros que miden la calidad de servicio sobre Internet}
-
-\begin{itemize}
-    \item \textbf{Ancho de banda: }Es la cantidad de datos que se pueden transferir en una red, entre dos puntos en un tiempo específico, normalmente se suele medir en bits por segundo (bps).
-    \item \textbf{Tasas de errores: }Es el número de veces que una transmisión de bits recibidos ha sido modificada por interferencia, ruido, errores de sincronización, fluctuación de fase o distorsión. Es una relación de rendimiento de red para transmisiones digitales a través de enlaces de datos de radio, Ethernet o redes de datos de fibra óptica.
-    \item \textbf{Jitter: } Es la magnitud de variación del retardo, es un factor crítico en las aplicaciones de tiempo real, si es mayor a la variación de retardo permitida, mayor es el retardo para entregar los datos y más grande es el tamaño de la memoria temporal necesaria en los receptores, en el caso de las teleconferencias, pueden requerir un límite superior razonable para la variación del retardo.
-    \item \textbf{Pérdidas de paquetes: }Al navegar por Internet, es posible que se pierda uno o varios paquetes en la transferencia, al no llegar a la dirección de destino, uno puede experimentar servicios lentos, interrupciones de la red e inclusive hasta la pérdida total de conectividad de la red.
-    \item \textbf{Interrupciones: }Momentos en los cuales el servicio se detiene, generando de esta manera molestar con respecto al servicio, se detiene tanto la descarga y subida de datos.
-    \item \textbf{Retraso en la transmisión: }Es el tiempo que se requiere para empujar todos los bits de un paquete al medio de la transmisión en uso.
-    \item \textbf{Disponibilidad: }Es proporcionar acceso ininterrumpido al internet, superando fallas de hardware y software.
-    \item \textbf{Tiempo de respuesta de los servicios: } Es el tiempo de respuesta del servidor.
-    \item \textbf{Ratio señal a ruido: }Es utilizada para comparar el nivel de una señal deseado con el nivel de ruido de fondo, relación entre la potencia de la señal y la potencia del ruido.
-    \item \textbf{Diafonía: }Es la interacción o acoplamiento entre señales cercanas, es cuando parte de las señales parece en otro lado, se produce por un acoplamiento capacitivo o inductivo entre dos cables próximos, pudiendo acoplar señales no deseadas en sistemas de transmisión de datos o telefonía.
-    \item \textbf{Eco: }Es el tiempo que transcurre entre la transmisión de una señal y su regreso al receptor. Es causado por las señales reflejadas por el equipo del extremo distante que regresa al oído hablante. Puede llegar a ser un problema significativo cuando el retardo del viaje llega a ser mayor a 50 milisegundos, a medida que el eco se incremente, los sistemas de paquetes van a necesitar usar controles como la cancelación del eco.
-    \item \textbf{Rendimiento: }Es la tasa media de transferencia de datos exitosa, es el valor útil para comprender la velocidad habitual de una conexión, se suele medir en bytes por segundo y se puede comparar con el ancho de banda efectivo y el máximo teórico para que de esa manera se pueda determinar si esta bien o mal una conexión.
+    \href{https://github.com/CarlosMestas/IDSE_CarlosMestas_Laboratorio2}{GitHub}} y los videos con una mayor explicación en \textcolor{blue}{
+    \href{https://drive.google.com/drive/folders/1o1PGTRtjRTngNK9nAKqZac3Yk3iThDme?usp=sharing}{Google Drive}}, el primer video grabado trata acerca del desarrollo del nivel y el segundo video con una demostración de como superar el nivel.
     
-\end{itemize}
+\section*{Desarrollo}
 
+    \begin{figure}[ht]
+        \centering                \includegraphics[width=1\textwidth]{images/CaptureIDSE01.PNG}
+        \caption{Visualización completa del nivel.}
+    \end{figure}
 
+    Para el desarrollo del nivel en general se a trabajo ordenando capas, por ejemplo nuestro personaje tiene un valor de 4, el veneno cuenta con el mismo valor, la vegetación tiene un valor un poco más alto y de la misma forma en todo el nivel.
+    \\
+    \\
+    Se le agregó también en el nivel el sonido por defecto que se encuentra en el paquete de desarrollo, así como también se modificó la coloración de todos los objetos en general, el suelo, el fondo, las cavernas que se pueden visualizar y también la coloración de las plantas.
+    \\
+    \\
+    Se observa también en esta imagen que se tienen una serie de plataformas, estan van a servir para poder pasar la primera parte de este nivel, se tiene que tener cuidado con ellas ya que se encuentran distintas partes y también un enemigo.
+\clearpage
+\newpage
 
+    \begin{figure}[ht]
+        \centering                \includegraphics[width=1\textwidth]{images/CaptureIDSE02.PNG}
+        \caption{Primera parte del nivel.}
+    \end{figure}    
+    
+    En la primera parte comenzamos con un poste de información que nos va a dar la bienvenida al juego y que el objetivo principal de este nivel es poder llevar a Ellen al transportador, este poste de información como el resto se complementa con un \textit{DialogCanvas} que nos permite realizar esta interacción para el cuadro de diálogo, estos postes están programados para mostrar el mensaje al momento de que nos acercamos y al momento de alejarnos desaparecen luego de dos segundos, tenemos luego los primeros obstáculos que tendremos que superar son espinas, teniendo cuidado entonces en nuestro salto, luego podemos observar un segundo poste de información que nos da una indicación de con que teclas vamos a poder usar las armas, ya que podemos ver del otro lado nuestro primer enemigo, el primer enemigo que tenemos es un \textit{Spitter} estos enemigos están programados con dos puntos de vida y un rango de visión solo para objetivos que estén delante suyo, tenemos que tener cuidado con las espinas ya que la plataforma nos lleva hacia ellas y podemos perder un punto de vida.
 
- 
+    \begin{figure}[ht]
+        \centering                \includegraphics[width=1\textwidth]{images/CaptureIDSE03.PNG}
+        \caption{Visualización de la caverna tras el enemigo.}
+    \end{figure}  
 
+    Detrás del \textit{Spitter} podemos observar escondido entre las plantas un botón en el suelo que nos sirve para poder mover una puerta que se encuentra en la parte de arriba, en el caso de que el jugador decida no pasar por esta zona entonces tendrá que regresar al inicio y pisar este botón.
 
+    \begin{figure}[ht]
+        \centering                \includegraphics[width=1\textwidth]{images/CaptureIDSE04.PNG}
+        \caption{Obstáculo para destruir y la puerta.}
+    \end{figure}  
+    
+    Tenemos en esta parte una columna para destruir, esta destrucción se puede realizar mediante un salto y golpe de sable, luego de esta columna observamos un pequeña caja donde podemos encontrar un punto de vida de salud que se activará automáticamente al pasar por ahí en caso de que hayamos perdido salud en la parte inferior, aquí también podemos observar un poste de información que nos indicará que tenemos que buscar la forma de activar la plataforma para esquivar el ácido.
+
+    \begin{figure}[ht]
+        \centering                \includegraphics[width=1\textwidth]{images/CaptureIDSE05.PNG}
+        \caption{Conjunto de enemigos.}
+    \end{figure}     
+    
+    Para poder activar la plataforma antes mencionada usaremos un \textit{SingleUseSwitch} que esta custodiada por enemigos, el poste de información de acá nos indica que tenemos que tener cuidado con los enemigos que se pueden ocultar, esto se debe a la vegetación que oculta a los enemigos, acá también vemos un nuevo enemigo, un \textit{Chomper} que a diferencia del otro este no ataca de lejos, pero si tiene en este caso un radio de visión de 360º.
+    
+\clearpage
+\newpage
+
+    \begin{figure}[ht]
+        \centering                \includegraphics[width=1\textwidth]{images/CaptureIDSE06.PNG}
+        \caption{Plataforma con activación.}
+    \end{figure}     
+    
+    Al activar esta plataforma previamente ya podemos superar esta parte del nivel.
+    
+    \begin{figure}[ht]
+        \centering                \includegraphics[width=1\textwidth]{images/CaptureIDSE07.PNG}
+        \caption{Parte final.}
+    \end{figure}     
+    
+    Finalmente tenemos que descender con un poco de cuidado con el ácido y luego nos vamos para la izquierda donde tendremos el último poste de información que nos indica que tenemos que tener cuidado con los enemigos ocultos, que pasemos solamente cuando estemos seguros de que ya no hay ninguno, esto se debe a que aquí en encontramos dos \textit{EnemySpawener} ocultos entre la vegetación, donde aparecerá un enemigo cada que otro muera, con un máximo de 5 y con un tiempo de aparición de 1 segundo. Luego de superar estos obstáculos termina el nivel con un \textit{teleporter}, este se tendrá que activar con la letra \textit{e}, esta indicación también aparecerá en un cuadro de diálogo, este \textit{teleporter} nos llevará al nivel final del juego que estaba previamente desarrollado.
 
 \end{document}
